@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.468">
+    <testcase classname="Program Feature" name="User creates request for a new program with the LMS API endpoint" time="0.244">
+        <skipped><![CDATA[Given User creates request for the LMS API endpoint.........................undefined
+When User sends HTTPS Request and  request Body for new Program with mandatory ,additional fields.undefined
+Then User receives 201 Created Status with response body for program........undefined
+]]></skipped>
+    </testcase>
+</testsuite>
