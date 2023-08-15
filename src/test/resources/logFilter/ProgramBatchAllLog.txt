@@ -1,0 +1,605 @@
+Request method:	POST
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/saveprogram
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning RestAssured API",
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programStatus": "Active",
+    "programId": null
+}
+HTTP/1.1 201 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:14:57 GMT
+Via: 1.1 vegur
+
+{
+    "programId": 18791,
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programDescription": "Learning RestAssured API",
+    "programStatus": "Active",
+    "creationTime": "2023-08-15T22:14:57.692+00:00",
+    "lastModTime": "2023-08-15T22:14:57.692+00:00"
+}
+Request method:	POST
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/saveprogram
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning RestAssured API",
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programStatus": "Active",
+    "programId": 18791
+}
+HTTP/1.1 400 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:14:59 GMT
+Via: 1.1 vegur
+
+{
+    "message": "cannot create program , since already exists",
+    "success": false
+}
+Request method:	PUT
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/putprogram/18791
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning Selenium using Javascript",
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programStatus": "Active",
+    "programId": 18791
+}
+HTTP/1.1 200 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:14:59 GMT
+Via: 1.1 vegur
+
+{
+    "programId": 18791,
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programDescription": "Learning Selenium using Javascript",
+    "programStatus": "Active",
+    "creationTime": null,
+    "lastModTime": null
+}
+Request method:	PUT
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/program/Aug23-TeamPri-SDET-169
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning RestAssured API and Postman",
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programStatus": "Active",
+    "programId": 18791
+}
+HTTP/1.1 200 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:00 GMT
+Via: 1.1 vegur
+
+{
+    "programId": 18791,
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programDescription": "Learning RestAssured API and Postman",
+    "programStatus": "Active",
+    "creationTime": null,
+    "lastModTime": null
+}
+Request method:	GET
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/18791
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:00 GMT
+Via: 1.1 vegur
+
+{
+    "programId": 18791,
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programDescription": "Learning RestAssured API and Postman",
+    "programStatus": "Active",
+    "creationTime": null,
+    "lastModTime": null
+}
+Request method:	DELETE
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/deletebyprogid/18791
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 50
+Date: Tue, 15 Aug 2023 22:15:00 GMT
+Via: 1.1 vegur
+
+Message: Program Id-18791 is deleted Successfully!
+Request method:	DELETE
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/deletebyprogid/18791
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:00 GMT
+Via: 1.1 vegur
+
+{
+    "message": "no record found with programId18791",
+    "success": false
+}
+Request method:	PUT
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/putprogram/18791
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning Selenium using Javascript",
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programStatus": "Active",
+    "programId": 18791
+}
+HTTP/1.1 404 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:02 GMT
+Via: 1.1 vegur
+
+{
+    "message": "program with id18791not found",
+    "success": false
+}
+Request method:	PUT
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/program/Aug23-TeamPri-SDET-169
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning RestAssured API and Postman",
+    "programName": "Aug23-TeamPri-SDET-169",
+    "programStatus": "Active",
+    "programId": 18791
+}
+HTTP/1.1 404 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:02 GMT
+Via: 1.1 vegur
+
+{
+    "message": "no list with such program nameAug23-TeamPri-SDET-169",
+    "success": false
+}
+Request method:	DELETE
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/deletebyprogname/Aug23-TeamPri-SDET-169
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:02 GMT
+Via: 1.1 vegur
+
+{
+    "message": "no record found with programName",
+    "success": false
+}
+Request method:	POST
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/saveprogram
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning Selenium using Java",
+    "programName": "",
+    "programStatus": "created",
+    "programId": 18791
+}
+HTTP/1.1 400 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:03 GMT
+Via: 1.1 vegur
+
+{
+    "message": "cannot create program , since already exists",
+    "success": false
+}
+Request method:	POST
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/saveprogram
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learn Java",
+    "programName": "",
+    "programStatus": "",
+    "programId": 18791
+}
+HTTP/1.1 400 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:03 GMT
+Via: 1.1 vegur
+
+{
+    "message": "cannot create program , since already exists",
+    "success": false
+}
+Request method:	POST
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/saveprogram
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning RestAssured API",
+    "programName": "Aug23-TeamPri-SDET-867",
+    "programStatus": "Active",
+    "programId": 18791
+}
+HTTP/1.1 201 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:04 GMT
+Via: 1.1 vegur
+
+{
+    "programId": 18792,
+    "programName": "Aug23-TeamPri-SDET-867",
+    "programDescription": "Learning RestAssured API",
+    "programStatus": "Active",
+    "creationTime": "2023-08-15T22:15:04.336+00:00",
+    "lastModTime": "2023-08-15T22:15:04.336+00:00"
+}
+Request method:	PUT
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/putprogram/18792
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learn data Science",
+    "programName": "Aug23-TeamPri-SDET-867",
+    "programStatus": "",
+    "programId": 18792
+}
+HTTP/1.1 500 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:04 GMT
+Via: 1.1 vegur
+
+{
+    "timestamp": "2023-08-15T22:15:04.793+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/lms/putprogram/18792"
+}
+Request method:	PUT
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/program/Aug23-TeamPri-SDET-867
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learn SQL",
+    "programName": "Aug23-TeamPri-SDET-867",
+    "programStatus": "",
+    "programId": 18792
+}
+HTTP/1.1 500 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:04 GMT
+Via: 1.1 vegur
+
+{
+    "timestamp": "2023-08-15T22:15:05.298+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/lms/program/Aug23-TeamPri-SDET-867"
+}
+Request method:	DELETE
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/deletebyprogname/Aug23-TeamPri-SDET-867
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 70
+Date: Tue, 15 Aug 2023 22:15:05 GMT
+Via: 1.1 vegur
+
+Message: Program Name -Aug23-TeamPri-SDET-867 is deleted Successfully!
+Request method:	GET
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/18792
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:05 GMT
+Via: 1.1 vegur
+
+{
+    "message": "program with this: 18792not found",
+    "success": false
+}
+Request method:	POST
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/saveprogram
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "programDescription": "Learning RestAssured API",
+    "programName": "Aug23-TeamPri-SDET-756",
+    "programStatus": "Active",
+    "programId": 18792
+}
+HTTP/1.1 201 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:05 GMT
+Via: 1.1 vegur
+
+{
+    "programId": 18794,
+    "programName": "Aug23-TeamPri-SDET-756",
+    "programDescription": "Learning RestAssured API",
+    "programStatus": "Active",
+    "creationTime": "2023-08-15T22:15:06.499+00:00",
+    "lastModTime": "2023-08-15T22:15:06.499+00:00"
+}
+Request method:	POST
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "batchDescription": "SDET-Learning REST API Postman",
+    "batchName": "Aug23-TeamPri-SDET-756SDET10-505",
+    "batchNoOfClasses": "5",
+    "batchStatus": "Active",
+    "programId": 18794,
+    "batchId": null
+}
+HTTP/1.1 201 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 15 Aug 2023 22:15:07 GMT
+Via: 1.1 vegur
+
+{
+    "batchId": 10235,
+    "batchName": "Aug23-TeamPri-SDET-756SDET10-505",
+    "batchDescription": "SDET-Learning REST API Postman",
+    "batchStatus": "Active",
+    "batchNoOfClasses": 5,
+    "programId": 18794,
+    "programName": "Aug23-TeamPri-SDET-756"
+}
+Request method:	DELETE
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/10235
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 50
+Date: Tue, 15 Aug 2023 22:15:07 GMT
+Via: 1.1 vegur
+
+Message: Batch with Id-10235 deleted Successfully!
+Request method:	DELETE
+Request URI:	https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/deletebyprogid/18794
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Connection: keep-alive
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 50
+Date: Tue, 15 Aug 2023 22:15:07 GMT
+Via: 1.1 vegur
+
+Message: Program Id-18794 is deleted Successfully!

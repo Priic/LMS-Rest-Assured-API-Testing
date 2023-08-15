@@ -6,6 +6,8 @@ import api.Utilities.restUtils;
 import io.cucumber.java.en.*;
 //import static io.restassured.module.jsv.JsonSchemaValidator;
 import static io.restassured.RestAssured.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -49,7 +51,7 @@ public class programSD extends restUtils {
 	@Then("User receives {int} Created Status with response body for program")
 	public void user_receives_Created_Status_with_response_body_for_program(Integer int1) {
 
-		response.then().spec(responseSpecification201()).log().all().log().headers();
+		response.then().spec(responseSpecification201()).body(matchesJsonSchema(programPostjson)).log().all();;
 	}
 
 	@When("User sends HTTPS Request and  request Body for Program with existing values in program name.")

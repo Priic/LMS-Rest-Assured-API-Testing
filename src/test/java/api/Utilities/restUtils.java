@@ -1,5 +1,6 @@
 package api.Utilities;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
@@ -8,6 +9,7 @@ import java.util.ResourceBundle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import api.Pojo.batchPayload;
 import api.Pojo.programPayload;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -26,7 +28,17 @@ public class restUtils {
 		
 		public static xlUtils xlUtils=new xlUtils(path.getString("Xlpath"));
 		public static programPayload programPayload=new programPayload();
+		public static batchPayload batchPayload=new batchPayload();
 		
+		//program schema path
+		public static File programPutjson = xlUtils.getJSONFile(path.getString("programPutSchemajson"));
+		public static File programPostjson = xlUtils.getJSONFile(path.getString("programPostSchemajson"));	
+		
+		//batch schema path
+		public static File postbatchJson = xlUtils.getJSONFile(path.getString("postbatchJson"));			
+		public static File getbatchbynameJson = xlUtils.getJSONFile(path.getString("getbatchbynameJson"));
+		public static File getbatchIDJson = xlUtils.getJSONFile(path.getString("getbatchIDJson"));
+		public static File updatebatchIDJson = xlUtils.getJSONFile(path.getString("batchupdatebyIDJson"));
 		
 		public static RequestSpecification reqSpecBuilder ;
 		public static ResponseSpecification resSpecBuilder ;
@@ -39,7 +51,7 @@ public class restUtils {
 		public static RequestSpecification requestSpecification() throws FileNotFoundException {
 			
 			if (reqSpecBuilder==null) {
-			PrintStream log=new PrintStream(new FileOutputStream (".\\src\\test\\resources\\logFilter\\ProgramAllLog.txt"));
+			PrintStream log=new PrintStream(new FileOutputStream (".\\src\\test\\resources\\logFilter\\ProgramBatchAllLog.txt"));
 			
 			reqSpecBuilder=new RequestSpecBuilder().setContentType(ContentType.JSON).addFilter(RequestLoggingFilter.logRequestTo(log))
 					.addFilter(ResponseLoggingFilter.logResponseTo(log))

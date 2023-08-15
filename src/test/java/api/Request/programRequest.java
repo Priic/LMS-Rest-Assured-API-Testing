@@ -11,7 +11,7 @@ public class programRequest extends restUtils {
 	// Program Post request
 	public static Response postRequest(programPayload payload) throws FileNotFoundException {
 
-		System.out.println("Here in payload");
+		//System.out.println("Here in payload");
 		request = given().spec(requestSpecification()).body(payload);
 		response = request.post(path.getString("Program_Post_URL"));
 		System.out.println("Here in after payload");
