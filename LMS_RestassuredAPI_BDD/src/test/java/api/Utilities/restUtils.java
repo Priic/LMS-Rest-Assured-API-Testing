@@ -62,6 +62,24 @@ public class restUtils {
 			resSpecBuilder=new ResponseSpecBuilder().expectStatusCode(200).build();
 			return resSpecBuilder;
 		}
+		public static ResponseSpecification responseSpecification400() {
+			
+			resSpecBuilder=new ResponseSpecBuilder().expectStatusCode(400).build();
+			return resSpecBuilder;
+		}
+		
+		public static ResponseSpecification responseSpecification500() {
+			
+			resSpecBuilder=new ResponseSpecBuilder().expectStatusCode(500).build();
+			return resSpecBuilder;
+		}
+		
+public static ResponseSpecification responseSpecification404() {
+			
+			resSpecBuilder=new ResponseSpecBuilder().expectStatusCode(404).build();
+			return resSpecBuilder;
+		}
+		
 		
 
 }

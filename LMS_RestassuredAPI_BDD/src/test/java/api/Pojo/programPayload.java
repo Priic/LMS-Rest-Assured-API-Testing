@@ -7,7 +7,14 @@ public class programPayload extends restUtils{
 	private String programDescription;
 	private String programName;
 	private String programStatus;
+	private Integer programId;
 	
+	public Integer getProgramId() {
+		return programId;
+	}
+	public void setProgramId(Integer programId) {
+		this.programId = programId;
+	}
 	public String getProgramDescription() {
 		return programDescription;
 	}
