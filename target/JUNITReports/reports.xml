@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="2" tests="23" time="15.654">
-    <testcase classname="Program Feature" name="User creates request for a new program with the LMS API endpoint" time="6.259">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="2" tests="23" time="16.411">
+    <testcase classname="Program Feature" name="User creates request for a new program with the LMS API endpoint" time="6.417">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body for new Program with mandatory ,additional fields.passed
 Then User receives 201 Created Status with response body for program........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User create program with valid endpoint and existing Program name." time="0.328">
+    <testcase classname="Program Feature" name="User create program with valid endpoint and existing Program name." time="0.329">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body for Program with existing values in program name..passed
 Then User receives 400 Bad Request Status with message for existing values in program name..passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="Users are able to update a program with valid programID and mandatory request body" time="0.548">
+    <testcase classname="Program Feature" name="Users are able to update a program with valid programID and mandatory request body" time="0.558">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request with mandatory and additional fields to update a Program with valid program ID.passed
 Then User receives 200 ok Status code with response body for update.........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User able to update a program with valid programName and mandatory request body" time="0.528">
+    <testcase classname="Program Feature" name="User able to update a program with valid programName and mandatory request body" time="0.524">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request with mandatory and additional fields for Program with valid program name.passed
 Then User receives 200 ok Status code with response body for update.........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User able to retrieve a program with valid programID and LMS API" time="0.307">
+    <testcase classname="Program Feature" name="User able to retrieve a program with valid programID and LMS API" time="0.344">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request to view Program with valid program ID.........passed
 Then User receives 200 OK Status with response body to view Program with valid program ID.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User able to delete a program with valid programId and mandatory request body" time="0.314">
+    <testcase classname="Program Feature" name="User able to delete a program with valid programId and mandatory request body" time="0.346">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request to delete a Program with valid program ID.....passed
 Then User receive 200 Status with response body for delete a program with valid Id.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User able to delete a program with invalid programId and mandatory request body" time="0.319">
+    <testcase classname="Program Feature" name="User able to delete a program with invalid programId and mandatory request body" time="0.391">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request to delete Program with invalid program ID.....passed
 Then User get 404 Status with response body for delete Program with invalid program ID.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User tries to update a program with invalid programID and mandatory request body" time="0.476">
+    <testcase classname="Program Feature" name="User tries to update a program with invalid programID and mandatory request body" time="0.498">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request with mandatory and additional fields to update Program with invalid program ID.passed
 Then User receives 404 Status code with response body  to update Program with invalid program ID.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User tries to update a program with invalid programName and mandatory request body" time="0.431">
+    <testcase classname="Program Feature" name="User tries to update a program with invalid programName and mandatory request body" time="0.585">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request with mandatory and additional fields to update Program with invalid program Name.passed
 Then User receives 404 Status code with response body to update Program with invalid program Name.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User able to delete a program with invalid programName and mandatory request body" time="0.315">
+    <testcase classname="Program Feature" name="User able to delete a program with invalid programName and mandatory request body" time="0.332">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request to delete Program with invalid program name...passed
 Then User receives 404 Status code with response body to delete Program with invalid program name.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User create program with missing mandatory fields." time="0.536">
+    <testcase classname="Program Feature" name="User create program with missing mandatory fields." time="0.565">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body to create program with missing mandatory fields..passed
 Then User receives 400 Bad Request Status with message  to create Program with missing mandatory fields.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User create program with missing All mandatory fields." time="0.456">
+    <testcase classname="Program Feature" name="User create program with missing All mandatory fields." time="0.508">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body to create program with missing ALL mandatory fields..passed
 Then User receives 400 Bad Request Status with message  to create Program with missing ALL mandatory fields.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User creates request for a new program two with the LMS API endpoint" time="0.533">
+    <testcase classname="Program Feature" name="User creates request for a new program two with the LMS API endpoint" time="0.565">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body for new Program with mandatory ,additional fields.passed
 Then User receives 201 Created Status with response body for program........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User tries to update a program with missing mandatory request body" time="0.458">
+    <testcase classname="Program Feature" name="User tries to update a program with missing mandatory request body" time="0.453">
         <failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request to update Program with missing mandatory fields.passed
 Then User receives 400 Bad Request Status with message to update Program with missing mandatory fields.failed
@@ -100,10 +100,10 @@ Expected status code <404> but was <500>.
 	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
 	at api.StepDefinitions.programSD.user_receives_Bad_Request_Status_with_message_to_update_Program_with_missing_mandatory_fields(programSD.java:174)
-	at ✽.User receives 400 Bad Request Status with message to update Program with missing mandatory fields(file:///D:/Git%20Repo%20download%20Folder%20Aug%202023/LMS-Rest-Assured-API-Testing/src/test/resources/Features/01program.feature:96)
+	at ✽.User receives 400 Bad Request Status with message to update Program with missing mandatory fields(file:///D:/GitRepodownloadFolderAug2023/LMS-Rest-Assured-API-Testing/src/test/resources/Features/01program.feature:96)
 ]]></failure>
     </testcase>
-    <testcase classname="Program Feature" name="User tries to update a program with valid Program name and missing mandatory request body" time="0.43">
+    <testcase classname="Program Feature" name="User tries to update a program with valid Program name and missing mandatory request body" time="0.459">
         <failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request for Program with valid Program name and missing mandatory fields.passed
 Then User receives 404 Bad Request Status with message to update Program with missing mandatory fields.failed
@@ -123,52 +123,52 @@ Expected status code <404> but was <500>.
 	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
 	at api.StepDefinitions.programSD.user_receives_Bad_Request_Status_with_message_to_update_Program_with_missing_mandatory_fields(programSD.java:174)
-	at ✽.User receives 404 Bad Request Status with message to update Program with missing mandatory fields(file:///D:/Git%20Repo%20download%20Folder%20Aug%202023/LMS-Rest-Assured-API-Testing/src/test/resources/Features/01program.feature:102)
+	at ✽.User receives 404 Bad Request Status with message to update Program with missing mandatory fields(file:///D:/GitRepodownloadFolderAug2023/LMS-Rest-Assured-API-Testing/src/test/resources/Features/01program.feature:102)
 ]]></failure>
     </testcase>
-    <testcase classname="Program Feature" name="User able to delete a program with valid programName and mandatory request body" time="0.325">
+    <testcase classname="Program Feature" name="User able to delete a program with valid programName and mandatory request body" time="0.327">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request to delete Program with valid program name.....passed
 Then User receive 200 Status with response body for delete Program with valid program name.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Program Feature" name="User tries to retrieve a program with invalid programID and LMS API" time="0.307">
+    <testcase classname="Program Feature" name="User tries to retrieve a program with invalid programID and LMS API" time="0.321">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request for Program with invalid program ID...........passed
 Then User receives 404 Status code with response body for Program with invalid program ID.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Batch features" name="User creates request for a new program with the LMS API endpoint" time="0.546">
+    <testcase classname="Batch features" name="User creates request for a new program with the LMS API endpoint" time="0.5">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body for new Program with mandatory ,additional fields.passed
 Then User receives 201 Created Status with response body for program........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Batch features" name="User creates request for a new batch for existing program with the LMS API endpoint" time="0.747">
+    <testcase classname="Batch features" name="User creates request for a new batch for existing program with the LMS API endpoint" time="0.801">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body to create new Batch with mandatory ,additional fields.passed
 Then User receives 201 Created Status with response body for newly created batch.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Batch features" name="User creates request for a new batch for existing program and batch with the LMS API endpoint" time="0.015">
+    <testcase classname="Batch features" name="User creates request for a new batch for existing program and batch with the LMS API endpoint" time="0.022">
         <skipped><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body to create new Batch with mandatory ,additional fields and previous batch id.undefined
 Then User receives 201 Created Status with response body for newly created batch with new batch id.undefined
 ]]></skipped>
     </testcase>
-    <testcase classname="Batch features" name="User creates request for a new batch for existing program with the LMS API endpoint" time="0.016">
+    <testcase classname="Batch features" name="User creates request for a new batch for existing program with the LMS API endpoint" time="0.013">
         <skipped><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request and  request Body to create new Batch with existing batch name.undefined
 Then User receives 400 Status with response body for existing batch.........undefined
 ]]></skipped>
     </testcase>
-    <testcase classname="Batch features" name="User creates request for a deleting batch for existing program with the LMS API endpoint" time="0.299">
+    <testcase classname="Batch features" name="User creates request for a deleting batch for existing program with the LMS API endpoint" time="0.338">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request to delete Batch by batchId....................passed
 Then User receives 200 Status ok with response to delete batch by Id........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Batch features" name="User able to delete a program with valid programId and mandatory request body" time="0.297">
+    <testcase classname="Batch features" name="User able to delete a program with valid programId and mandatory request body" time="0.314">
         <system-out><![CDATA[Given User creates request for the LMS API endpoint.........................passed
 When User sends HTTPS Request to delete a Program with valid program ID.....passed
 Then User receive 200 Status with response body for delete a program with valid Id.passed
