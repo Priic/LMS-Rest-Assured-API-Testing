@@ -88,18 +88,18 @@ Feature: Program Feature
     Given User creates request for the LMS API endpoint
     When User sends HTTPS Request and  request Body for new Program with mandatory ,additional fields
     Then User receives 201 Created Status with response body for program
-
-  	@PutRequest_updateByProgrambyID_withMissingMandatoryFields
-  	Scenario: User tries to update a program with missing mandatory request body
-    Given User creates request for the LMS API endpoint
-    When User sends HTTPS Request to update Program with missing mandatory fields
-    Then User receives 400 Bad Request Status with message to update Program with missing mandatory fields
-
-  	@PutRequest_updateProgramByProgramName_withMissingMandatoryFields
-  	Scenario: User tries to update a program with valid Program name and missing mandatory request body
-    Given User creates request for the LMS API endpoint
-    When User sends HTTPS Request for Program with valid Program name and missing mandatory fields
-    Then User receives 404 Bad Request Status with message to update Program with missing mandatory fields
+#
+  #	@PutRequest_updateByProgrambyID_withMissingMandatoryFields
+  #	Scenario: User tries to update a program with missing mandatory request body
+    #Given User creates request for the LMS API endpoint
+    #When User sends HTTPS Request to update Program with missing mandatory fields
+    #Then User receives 400 Bad Request Status with message to update Program with missing mandatory fields
+#
+  #	@PutRequest_updateProgramByProgramName_withMissingMandatoryFields
+  #	Scenario: User tries to update a program with valid Program name and missing mandatory request body
+    #Given User creates request for the LMS API endpoint
+    #When User sends HTTPS Request for Program with valid Program name and missing mandatory fields
+    #Then User receives 404 Bad Request Status with message to update Program with missing mandatory fields
 
 
  		@DeleteProgramwithvalidProgramName

@@ -1,0 +1,1 @@
+{"uuid":"f63bf863-cbd3-4232-b860-6ecf511a80e1","name":"Scenario: User creates request for a deleting batch for existing program with the LMS API endpoint","children":["c6a0a64b-3301-447c-8059-e05d2706198b"],"befores":[],"afters":[],"start":1692242156196,"stop":1692242156481}

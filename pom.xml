@@ -165,13 +165,22 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.1</version>
-					<configuration>
-						<release>11</release>
-					</configuration>
-				</plugin>
+			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-surefire-plugin</artifactId>
+			    <version>3.0.0</version>
+	      		<configuration>
+					  
+					<includes>
+<include>**/runner.java</include>
+
+</includes>  
+          		<suiteXmlFiles>
+
+          		</suiteXmlFiles>
+        		</configuration>
+		</plugin>
+			
 			</plugins>
 		</pluginManagement>
 	</build>
